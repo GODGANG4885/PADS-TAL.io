@@ -5,9 +5,8 @@ title: Your Project Title
 
 <div align="center">
 
-# PADS-TAL
-## Padding Annealed Diffusion Sampling in Text Aligned Latent
-for Robust and Diverse Text-to-Music Generation
+# PADS-TAL : Padding Annealed Diffusion Sampling in Text Aligned Latent for Robust and Diverse Text-to-Music Generation
+## 
 
 **Author Name<sup>1,2*</sup>, Co-Author Name<sup>1</sup>, Another Author<sup>2</sup>**
 
