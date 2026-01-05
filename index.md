@@ -100,7 +100,7 @@ yet practical deployments often rely on short tag-style prompts and face persist
 </table>
 
 ---
-![Results Visualization](static/image/Figure6.pdf)
+![Results Visualization][static/image/Figure6.png]
 
 *Figure 1: A representation of a Turing Machine. Source: [Wiki](https://en.wikipedia.org/wiki/Turing_machine).*
 
@@ -129,3 +129,6 @@ Turing's paper laid the foundation for the theory of computation and had a profo
   year={1936}
 }
 ```
+
+
+[def]: static/image/Figure6.pdf
