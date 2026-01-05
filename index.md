@@ -100,7 +100,7 @@ yet practical deployments often rely on short tag-style prompts and face persist
 </table>
 
 ---
-
+![Results Visualization](static/image/Figure6.pdf)
 
 *Figure 1: A representation of a Turing Machine. Source: [Wiki](https://en.wikipedia.org/wiki/Turing_machine).*
 
