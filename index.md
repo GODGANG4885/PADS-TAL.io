@@ -22,15 +22,8 @@ title: Your Project Title
 
 ## Abstract
 
-Write your abstract here. Explain the problem you're solving, your approach, and key results. For example:
-
-We propose **Your Method Name**, a novel approach for [task description]. Our method addresses [problem] by [solution approach]. We demonstrate [key contributions] and achieve state-of-the-art performance on [benchmarks/tasks]. Key features include:
-
-- **Feature 1**: Description
-- **Feature 2**: Description  
-- **Feature 3**: Description
-
-Experimental results show that our method achieves [X% improvement] over previous state-of-the-art while being [Y times faster/more efficient].
+Text-to-Music (T2M) diffusion models increasingly adopt Transformer backbones (DiT), 
+yet practical deployments often rely on short tag-style prompts and face persistent challenges: generations can collapse to limited patterns, while controlling diversity at inference time remains difficult under strict semantic requirements. Training-free sampling methods like CADS, while effective in Text-to-Image, can severely degrade alignment and fidelity in TTM because early-timestep perturbations strongly alter global musical attributes (e.g., genre, mood, structure). We propose two complementary solutions: Padding Annealed Diffusion Sampling (PADS), which injects timestep-dependent noise only into padding tokens while freezing semantic tokens to prevent semantic drift, and Text-Aligned Latent (TAL), a text-aware latent space learned via a redesigned VAE so diffusion sampling occurs near text-consistent neighborhoods. Together, PADS+TAL improve diversity while preserving prompt-aligned global attributes in TTM.
 
 ---
 
