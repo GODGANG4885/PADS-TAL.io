@@ -1,149 +1,230 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
+---
+layout: default
+title: Your Project Title
+---
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+<div align="center">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="./static/css/index.css">
+# Your Project Title
+## Subtitle or Full Title Here
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/index.js"></script>
+**Author Name<sup>1,2*</sup>, Co-Author Name<sup>1</sup>, Another Author<sup>2</sup>**
 
-  <!-- MathJax -->
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-        displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
-        processEscapes: true, 
-        tags: 'all',
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-  </script>
-  <script
-    type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-  </script>
-</head>
-<body>
+<sup>1</sup>Your University or Institution  
+<sup>2</sup>Affiliated Company or Lab  
+<sup>*</sup>Equal contribution or corresponding author
 
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">{{ page.title }}</h1>
-          {% if page.authors %}
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              {{ page.authors }}
-            </span>
-          </div>
-          {% endif %}
-
-          {% if page.affiliations %}
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              {{ page.affiliations }}
-            </span>
-          </div>
-          {% endif %}
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              {% if page.paper %}
-              <span class="link-block">
-                <a href="{{ page.paper }}"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              {% endif %}
-              <!-- Video Link. -->
-              {% if page.video %}
-              <span class="link-block">
-                <a href="{{ page.video }}"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              {% endif %}
-              <!-- Code Link. -->
-              {% if page.code %}
-              <span class="link-block">
-                <a href="{{ page.code }}"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              {% endif %}
-              <!-- Dataset Link. -->
-              {% if page.data %}
-              <span class="link-block">
-                <a href="{{ page.data }}"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-database"></i>
-                  </span>
-                  <span>Data</span>
-                </a>
-              </span>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-<div class="container is-max-desktop">
-
-<div class="content">
-  {{ content }}
-</div>
+[Paper](https://arxiv.org/abs/your-paper-id) | [Code](https://github.com/your-username/your-repo) | [Demo](https://huggingface.co/your-demo) | [🤗 HF Demo](https://huggingface.co/spaces/your-space)
 
 </div>
-</section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and <a href="https://github.com/shunzh/project_website">the Jekyll fork</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+---
 
-</body>
-</html>
+## Abstract
+
+Write your abstract here. Explain the problem you're solving, your approach, and key results. For example:
+
+We propose **Your Method Name**, a novel approach for [task description]. Our method addresses [problem] by [solution approach]. We demonstrate [key contributions] and achieve state-of-the-art performance on [benchmarks/tasks]. Key features include:
+
+- **Feature 1**: Description
+- **Feature 2**: Description  
+- **Feature 3**: Description
+
+Experimental results show that our method achieves [X% improvement] over previous state-of-the-art while being [Y times faster/more efficient].
+
+---
+
+## Method Overview
+
+![Method Overview](assets/images/method_overview.png)
+*Figure 1: Overview of our proposed method.*
+
+### Key Contributions
+
+1. **Contribution 1**: Detailed explanation
+2. **Contribution 2**: Detailed explanation
+3. **Contribution 3**: Detailed explanation
+
+---
+
+## Results
+
+### Quantitative Results
+
+| Method | CLAP Score ↑ | Other Metric ↑ | Speed ↓ |
+|--------|--------------|----------------|---------|
+| Baseline | 0.30 | - | - |
+| Method A | 0.32 | - | - |
+| Method B | 0.34 | - | - |
+| **Ours** | **0.36** | **-** | **-** |
+
+### Qualitative Results
+
+![Results Visualization](assets/images/evaluation_results_plot.png)
+*Figure 2: Performance comparison across different configurations.*
+
+---
+
+## Audio Examples
+
+### Task 1: [Description]
+
+<table>
+  <tr>
+    <th>Reference</th>
+    <th>Baseline</th>
+    <th>Ours</th>
+  </tr>
+  <tr>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="assets/audio/reference_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="assets/audio/baseline_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="assets/audio/ours_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="assets/images/example_1_spec.png" alt="Spectrogram" style="width: 100%;"></td>
+  </tr>
+</table>
+
+### Task 2: [Description]
+
+<table>
+  <tr>
+    <th>Reference</th>
+    <th>Baseline</th>
+    <th>Ours</th>
+  </tr>
+  <tr>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="assets/audio/reference_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="assets/audio/baseline_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="assets/audio/ours_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="assets/images/example_2_spec.png" alt="Spectrogram" style="width: 100%;"></td>
+  </tr>
+</table>
+
+---
+
+## Additional Results
+
+### Ablation Studies
+
+![Ablation Studies](assets/images/ablation_plot.png)
+*Figure 3: Ablation study results showing the impact of different components.*
+
+### Parameter Analysis
+
+![Parameter Analysis](assets/images/scheduler_plot.png)
+*Figure 4: Analysis of different parameter configurations.*
+
+---
+
+## BibTeX
+
+If you find this work useful, please cite:
+
+```bibtex
+@inproceedings{yourname2024yourmethod,
+    title={Your Method: Full Title Here},
+    author={Your Name and Co-Author Name and Another Author},
+    booktitle={Conference Name (Acronym)},
+    year={2024}
+}
+```
+
+---
+
+## Acknowledgements
+
+We thank [people/organizations] for [contributions]. This work was supported by [funding sources].
+
+Special thanks to:
+- [Person/Lab] for [contribution]
+- [Tool/Resource] for [usage]
+
+---
+
+## Contact
+
+For questions or collaborations, please contact:
+- **First Author**: [email@domain.com](mailto:email@domain.com)
+- **Project Page**: [https://your-username.github.io/project-name](https://your-username.github.io/project-name)
+- **GitHub**: [https://github.com/your-username/project-name](https://github.com/your-username/project-name)
+
+<style>
+  body {
+    font-family: "Times", "DejaVu Serif", serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  audio {
+    display: block;
+    margin: 10px auto;
+  }
+  code {
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+</style>
+
