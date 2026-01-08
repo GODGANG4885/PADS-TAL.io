@@ -61,9 +61,9 @@ yet practical deployments often rely on short tag-style prompts and face persist
       </audio>
     </td>
   </tr>
-  <tr>
+  <!-- <tr>
     <td colspan="3"><img src="assets/images/example_1_spec.png" alt="Spectrogram" style="width: 100%;"></td>
-  </tr>
+  </tr> -->
 </table>
 
 ### Task 2: [Description]
@@ -94,9 +94,9 @@ yet practical deployments often rely on short tag-style prompts and face persist
       </audio>
     </td>
   </tr>
-  <tr>
+  <!-- <tr>
     <td colspan="3"><img src="assets/images/example_2_spec.png" alt="Spectrogram" style="width: 100%;"></td>
-  </tr>
+  </tr> -->
 </table>
 
 ---
