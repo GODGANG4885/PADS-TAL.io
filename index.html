@@ -111,19 +111,25 @@
 <section id="abstract">
   <h2>Abstract</h2>
   <p>
-    We propose a DiT-based music generation framework that extends latent diffusion models
-    with transformer-based global context modeling. By incorporating melody-aware conditioning
-    and structured training schedules, the model achieves improved musical coherence and
-    controllability over long temporal horizons.
+    Text-to-Music(T2M) diffusion models increasingly adopt Transformer backbones (DiT), 
+    yet practical deployments often rely on short tag-style prompts and face persistent challenges: 
+    generations can collapse to limited patterns, while controlling diversity at inference time remains difficult under strict semantic requirements. 
+    Training-free sampling methods like CADS, while effective in Text-to-Image, 
+    can severely degrade alignment and fidelity in T2M because early-timestep perturbations strongly alter global musical attributes (e.g., genre, mood, structure).
+    We propose two complementary solutions: Padding Annealed Diffusion Sampling (PADS), 
+    which injects timestep-dependent noise only into padding tokens while freezing semantic tokens to prevent semantic drift, 
+    and Text-Aligned Latent (TAL), a text-aware latent space learned via a redesigned VAE so diffusion sampling occurs near text-consistent neighborhoods. 
+    Together, PADS+TAL improve diversity while preserving prompt-aligned global attributes in T2M.
   </p>
 </section>
 
 <section id="method">
   <h2>Method Overview</h2>
   <p>
-    Our system builds upon a latent audio diffusion backbone and replaces the conventional
-    U-Net architecture with a diffusion transformer (DiT). Conditioning signals such as
-    text prompts and melody representations are injected through attention-based adapters.
+    요약하면, PADS는 inference 단계에서 perturbation이 의미토큰을 직접 훼손하지 않도록 적용 위치를 제한하여 안정
+    적인 탐색 자유도를 확보하는 샘플링 기법이며, TAL은 샘플링이 이루어지는 표현 공간 자체가 텍스트 전역 의미와
+    정렬되도록 구성하여 전역 속성 일관성을 강화하는 기반입니다. 두 방법을 결합함으로써, 본 연구는 T2M에서 전역 속성을
+    유지한 상태의 다양성(genre/global-consistent diversity)을 보다 효과적으로 확장하고자 합니다.
   </p>
 </section>
 
@@ -151,30 +157,9 @@
       <div class="caption">Condition: CQT-based melody control</div>
     </div>
 
-    <div class="audio-card">
-      <h3>Structure Control</h3>
-      <audio controls>
-        <source src="audio/sample_structure.wav" type="audio/wav" />
-      </audio>
-      <div class="caption">Verse–Chorus–Verse generation</div>
-    </div>
-  </div>
+    
 </section>
 
-<section id="citation">
-  <h2>Citation</h2>
-  <p>
-    If you find this work useful, please cite:
-  </p>
-  <pre>
-@article{yourname2026ditmusic,
-  title={DiT-based Controllable Music Generation},
-  author={Your Name},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-  </pre>
-</section>
 
 <footer>
   © 2026 DiT Music Project · Built with GitHub Pages
