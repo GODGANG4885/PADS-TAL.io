@@ -26,43 +26,222 @@ yet practical deployments often rely on short tag-style prompts and face persist
 
 ---
 <div align="center">
-<img src=static/image/Figure6.png alt="model">
+<img src=static/image/Figure11.png alt="model">
 </div>
 ---
 
 ## Audio Examples
 
-### Task 1: [Text-to-Music]
+### Task 1: [Text-to-Music with Random Prompts]
+
+#### Input Prompt 1: jazz, piano trio, swing, live recording feel, warm tone, improvisation
 
 <table>
   <tr>
+    <th>Sample</th>
     <th>Baseline</th>
-    <th>CADS</th>
-    <th>Ours</th>
+    <th>Ours (PADS)</th>
   </tr>
   <tr>
+    <td><b>Sample 1</b></td>
     <td>
       <audio controls style="width: 200px;">
-        <source src="assets/audio/reference_1.wav" type="audio/wav">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1114_0.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </td>
     <td>
       <audio controls style="width: 200px;">
-        <source src="assets/audio/baseline_1.wav" type="audio/wav">
-        Your browser does not support the audio element.
-      </audio>
-    </td>
-    <td>
-      <audio controls style="width: 200px;">
-        <source src="assets/audio/ours_1.wav" type="audio/wav">
+        <source src="static/audio_samples/TAL/pads/task1/1114_0.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </td>
   </tr>
-  <!-- <tr>
-    <td colspan="3"><img src="assets/images/example_1_spec.png" alt="Spectrogram" style="width: 100%;"></td>
-  </tr> -->
+  <tr>
+    <td><b>Sample 2</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1114_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1114_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 3</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1114_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1114_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 4</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1114_3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1114_3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+</table>
+
+#### Input Prompt 2: lofi, chill, vinyl noise, mellow, soft drums, warm chords, nostalgic
+
+<table>
+  <tr>
+    <th>Sample</th>
+    <th>Baseline</th>
+    <th>Ours (PADS)</th>
+  </tr>
+  <tr>
+    <td><b>Sample 1</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1115_0.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1115_0.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 2</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1115_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1115_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 3</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1115_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1115_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 4</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1115_3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1115_3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+</table>
+
+#### Input Prompt 3: soundtrack, underscore, tension, subtle strings, low dynamics, cinematic
+
+<table>
+  <tr>
+    <th>Sample</th>
+    <th>Baseline</th>
+    <th>Ours (PADS)</th>
+  </tr>
+  <tr>
+    <td><b>Sample 1</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1118_0.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1118_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 2</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1118_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1118_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 3</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1118_2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1118_3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sample 4</b></td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/stable_audio/baseline/task1/1118_3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+    <td>
+      <audio controls style="width: 200px;">
+        <source src="static/audio_samples/TAL/pads/task1/1118_1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+  </tr>
 </table>
 
 ### Task 2: [Genre-based Music Generation]
@@ -71,8 +250,8 @@ yet practical deployments often rely on short tag-style prompts and face persist
   <tr>
     <th>Genre</th>
     <th>Baseline</th>
-    <th>TAL-CADS</th>
-    <th>TAL-PADS</th>
+    <th>CADS</th>
+    <th>Ours</th>
   </tr>
 
   <!-- Tropical House -->
@@ -550,8 +729,7 @@ yet practical deployments often rely on short tag-style prompts and face persist
 
 He used the concept of a universal Turing machine to prove that the set of computable functions is recursively enumerable, meaning it can be listed by an algorithm.
 
-## Significance
-Turing's paper laid the foundation for the theory of computation and had a profound impact on the development of computer science. The Turing machine became a fundamental concept in theoretical computer science, serving as a theoretical model for studying the limits and capabilities of computation. Turing's work also influenced the development of programming languages, algorithms, and the design of modern computers.
+
 
 
 
